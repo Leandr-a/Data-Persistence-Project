@@ -1,25 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
-public class MainManager : MonoBehaviour
+public class UIMainScene : MonoBehaviour
 {
-    private string playerName;
+    public TextMeshProUGUI scoreNameText;
     // Start is called before the first frame update
     void Start()
     {
-        
+        //scoreNameText.text = "Best Score: " + "Name: " + GameManager.instance.playerName;
     }
 
     // Update is called once per frame
     void Update()
     {
         
-    }
-
-    public void StorePlayerName(string input)
-    {
-        playerName = input;
-        Debug.Log(playerName);
     }
 }
